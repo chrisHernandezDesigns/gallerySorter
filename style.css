@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.img-wrapper{
+    width: 250px;
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    align-items: center;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.h1{
+    font-size: 50px;
+}
+
+.row{
+    margin: 10px -16px;
+}
+
+
+/* padding between columns */
+.row,
+.row > .column{
+    padding: 8px;
+}
+
+/* create equal columns that float */
+.column{
+    float: left;
+    width: 25%;
+    display: none;
+}
+
+/* clear floats after row */
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.content{
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* show is added to filter */
+.show{
+    display: block;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ddd;
+}
+
+.btn.active{
+    background-color: #666;
+    color: #fff;
+}
